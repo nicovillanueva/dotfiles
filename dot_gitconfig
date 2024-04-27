@@ -1,0 +1,9 @@
+[user]
+	email = villanueva.arg@gmail.com
+	name = nicovillanueva
+[init]
+	defaultBranch = main
+[alias]
+	co = commit
+    ch = checkout
+    br = branch
