@@ -1,0 +1,13 @@
+alias nv=/usr/bin/nvim
+alias vim=/usr/bin/nvim
+alias cat=/usr/bin/bat
+
+generic_opts='--long --colour-scale --icons=auto --group-directories-first --header --git'
+alias ls="eza $generic_opts"
+alias la="eza $generic_opts --all"
+
+alias g="git status"
+
+alias cat="bat --theme=DarkNeon --style=full"
+
+alias k="kubectl"

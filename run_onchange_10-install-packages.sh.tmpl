@@ -1,0 +1,12 @@
+#!/bin/bash
+{{ if eq .chezmoi.os "linux" -}}
+
+    {{ if eq .chezmoi.osRelease.id "manjaro" -}}
+        source {{ .chezmoi.workingTree }}/scripts/manjaro_setup.sh
+    {{ else if eq .chezmoi.osRelease.id "ubuntu" -}}
+        echo "ubuntu!"
+    {{ end -}}
+
+{{ else if eq .chezmoi.os "darwin" -}}
+    source {{ .chezmoi.workingTree }}/scripts/macos_setup.sh
+{{ end -}}
